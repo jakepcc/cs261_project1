@@ -15,6 +15,8 @@ public:
   bool isDouble();
   int getTopNumber();
   int getBottonNumber();
+  void printBone(bool with_points = false);
+  int getPointValue();
 };
 
 #endif

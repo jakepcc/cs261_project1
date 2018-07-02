@@ -12,6 +12,7 @@
 // create
 // turn(direction): boolean, resulting orientation
 #include <cstdio>
+#include <iostream>
 using namespace std;
 #include "bone_class.h"
 
@@ -42,4 +43,21 @@ int Bone::getBottonNumber()
 bool Bone::isDouble()
 {
   return _double;
+}
+
+void Bone::printBone(bool with_points)
+{
+  if (with_points)
+  {
+    cout << top_number << "/" << bottom_number << " - points: " << getPointValue() << endl;
+  }
+  else
+  {
+    cout << top_number << "/" << bottom_number << endl;
+  }
+}
+
+int Bone::getPointValue()
+{
+  return top_number + bottom_number;
 }

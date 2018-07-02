@@ -7,11 +7,13 @@ class ChickenYard
 {
 
   list<Bone> deck;
-  int current_count;
+  int deck_size;
+  bool pop_iter;
 
 public:
   Bone draw();
-  // void shuffle(list _deck);
+  void shuffle();
   ChickenYard();
   void printDeck();
+  int getDeckSize();
 };
