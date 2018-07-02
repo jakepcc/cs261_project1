@@ -1,4 +1,7 @@
 //
+#ifndef YARD
+#define YARD
+
 #include "bone_class.h"
 #include <list>
 using namespace std;
@@ -17,3 +20,5 @@ public:
   void printDeck();
   int getDeckSize();
 };
+
+#endif

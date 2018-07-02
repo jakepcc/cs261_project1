@@ -17,7 +17,6 @@ ChickenYard::ChickenYard()
     if (count1 <= 9)
     {
       Bone newBone(count1, count2);
-      cout << count1 << "/" << count2 << endl;
       deck.push_back(newBone);
       count1++;
     }

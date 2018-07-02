@@ -9,11 +9,13 @@ EXE_NAME = project1
 # *.cpp and *.h files are used as dependancies for *.o files
 $(EXE_NAME): bone_class.o
 
-test: bone_class.o chicken_yard_class.o
+test: bone_class.o chicken_yard_class.o player_class.o
 
 bone_class.o: bone_class.h
 
 chicken_yard_class.o: chicken_yard_class.h
+
+player_class.o: player_class.h
 
 .PHONY: clean
 
